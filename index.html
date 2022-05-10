@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CuorseraMod2</title>
+</head>
+<style>
+	
+#cuadro{
+	margin-top: 50px;
+    text-align: center;
+}
+
+main.menu{
+    position: relative;
+    top: 30px;
+}
+
+.menu{
+	display: flex;
+}
+
+.menu > div{
+    border: 2px solid black;
+    margin: 8px;
+}
+
+.chicken{
+	background-color: #706A68;
+}
+
+.chicken h3 {
+    background-color: #CBF0A8;
+    border: 2px solid;
+    float: right;
+    width: 120px;
+    text-align: center;
+    margin-top: -2px;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    padding: 2px;
+    
+}
+
+.chicken p {
+    clear: both;
+    padding: 10px;
+    color: white;
+}
+
+.beef{
+	background-color: #706A68;
+}
+
+.beef h3 {
+    background-color: #F0A58F;
+    border: 2px solid;
+    float: right;
+    width: 120px;
+    text-align: center;
+    margin-top: -2px;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    padding: 2px;
+    
+}
+
+.beef p {
+    clear: both;
+    padding: 10px;
+    color: white;
+}
+
+.suchi{
+	background-color: #706A68;
+}
+
+.suchi h3 {
+    background-color: #788FF0;
+    border: 2px solid;
+    float: right;
+    width: 120px;
+    text-align: center;
+    margin-top: -2px;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    padding: 2px;
+    
+}
+
+.suchi p {
+    clear: both;
+    padding: 10px;
+    color: white;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        display: grid;
+        grid-template-areas: "left-column right-column" " center-row  center-row";
+    }
+
+    .menu > .chicken{
+        grid-area: left-column;
+    }
+
+    .menu > .beef{
+        grid-area: right-column;
+    }
+
+    .menu > .suchi{
+        grid-area: center-row;
+    }
+
+}
+
+/* Responsive view mobile */
+
+@media all and (max-width: 767px) {
+
+    .menu{
+        flex-direction: column;
+    }
+}
+
+</style>
+<body>
+
+<div id="cuadro"><h1>Our Menu</h1></div>
+
+<main class="menu">
+	<div class="chicken">
+		<h3>Chicken</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="beef">
+		<h3>Beef</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class="suchi">
+		<h3>Sushi</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</main>
+
+</body>
+</html>
